@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Катя Арбузова](https://up.htmlacademy.ru/htmlcss/16/user/325265).
-* Наставник: [Инна Кришталь] (https://htmlacademy.ru/profile/id43485).
+* Наставник: [Инна * Кришталь] (https://htmlacademy.ru/profile/id43485).
 
 ---
 
