@@ -3,47 +3,44 @@
     <head>
       <meta charset="utf-8">
       <title>HTML-Academy: Nerds</title>
-      <style>
-        .hover { display: none; }
-      </style>
   </head>
   <body>
-      <header class="main-header">
-        <div class="container">
-          <div class="header-logo">
-            <a href="#"><img src="http://placehold.it/160x50" alt="Дизайн-студия Nerds" width="160" height="50"></a>
-          </div>
-          <nav class="main-navigation">
-            <ul>
-              <li>
-                <a href="#">Студия</a>
-              </li>
-              <li>
-                <a href="#">Клиенты</a>
-              </li>
-              <li>
-                <a href="#">Магазин</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="user-block">
-            <a class="basket" href="#">Корзина</a>
-          </div>
-          <h1>Магазин готовых шаблонов</h1>
-         </div>
+    <header class="main-header">
+      <div class="container">
+        <section class="header-logo">
+          <a href="#"><img src="http://placehold.it/160x50" alt="Дизайн-студия Nerds" width="160" height="50"></a>
+        </section>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="user-block">
+          <a class="basket" href="#">Корзина</a>
+        </section>
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
     </header>
-    <main class="container">
-      <h2>Стоимость</h2>
-      <form oninput="price-count.value=price-output.value">
+    <main>
+      <form>
         <div class="price-controls">
-          <input type="range" name="price-count" min="0" max="15000" step="1" value="10000">
+          <label for="price-count">Стоимость</label>
+          <input type="range" name="price-count" id="price-count" min="0" max="15000" step="1" value="10000">
           от <input class="min-price" type="text" value="5 000">
           до <input class="max-price" type="text" value="15 000">
         </div>
-          <h2>Сетка</h2>
+        <b>Сетка</b>
         <label>
           <input type="radio" name="net" value="адаптивная" checked>
           Адаптивная
@@ -56,7 +53,7 @@
           <input  type="radio" name="net" value="резиновая">
           Резиновая
         </label>
-        <h2>Особенности</h2>
+        <b>Особенности</b>
         <input type="checkbox" name="slider" id="slider" checked>
         <label for="slider">Слайдер</label>
         <input type="checkbox" name="features" id="features">
@@ -67,10 +64,10 @@
         <label for="galery">Галерея</label>
         <input type="checkbox" name="basket" id="basket">
         <label for="basket">Корзина</label>
-        <br>
         <input type="submit" name="filters" value="Показать">
       </form>
-      <h2>Сортировать:</h2>
+      <section class="classify">
+      <b>Сортировать:</b>
       <ul>
         <li><a href="#">по цене</a></li>
         <li><a href="#">по типу</a></li>
@@ -80,54 +77,55 @@
         <li><a href="#">Вниз</a></li>
         <li><a href="#">Вверх</a></li>
       </ul>
-      <section class="catalog-item">
+      </section>
+      <article class="catalog-item">
         <img src="http://placehold.it/200x300" alt="Sedona" width="200" height="300">
         <div class="hover">
-          <a href="#"><h2>Sedona</h2></a>
+          <a href="#"><b>Sedona</b></a>
           <p>Информационный сайт для туристов</p>
           <a href="#">9 900 РУБ.</a>
         </div>
-      </section>
-      <section class="catalog-item">
+      </article>
+      <article class="catalog-item">
         <img src="http://placehold.it/200x300" alt="Pink App" width="200" height="300">
         <div class="hover">
-          <a href="#"><h2>Pink App</h2></a>
+          <a href="#"><b>Pink App</b></a>
           <p>Продуктовый лендинг приложения для iOS и Android</p>
           <a href="#">9 900 РУБ.</a>
         </div>
-      </section>
-      <section class="catalog-item">
+      </article>
+      <article class="catalog-item">
         <img src="http://placehold.it/200x300" alt="Barbershop Borodinski" width="200" height="300">
         <div class="hover">
-          <a href="#"><h2>Barbershop Borodinski</h2></a>
+          <a href="#"><b>Barbershop Borodinski</b></a>
           <p></p>
           <a href="#">9 900 РУБ.</a>
           </div>
-      </section>
-      <section class="catalog-item">
+      </article>
+      <article class="catalog-item">
           <img src="http://placehold.it/200x300" alt="Mishka" width="200" height="300">
           <div class="hover">
-          <a href="#"><h2>Mishka</h2></a>
+          <a href="#"><b>Mishka</b></a>
           <p></p>
           <a href="#">9 900 РУБ.</a>
         </div>
-      </section>
-      <section class="catalog-item">
+      </article>
+      <article class="catalog-item">
         <img src="http://placehold.it/200x300" alt="A+" width="200" height="300">
         <div class="hover">
-          <a href="#"><h2>A+</h2></a>
+          <a href="#"><b>A+</b></a>
           <p></p>
           <a href="#">9 900 РУБ.</a>
         </div>
-      </section>
-      <section class="catalog-item">
+      </article>
+      <article class="catalog-item">
         <img src="http://placehold.it/200x300" alt="Кваст" width="200" height="300">
         <div class="hover">
-          <a href="#"><h2>Кваст</h2></a>
+          <a href="#"><b>Кваст</b></a>
           <p></p>
           <a href="#">9 900 РУБ.</a>
         </div>
-      </section>
+      </article>
       <ul>
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
@@ -139,7 +137,7 @@
       <div class="container">
         <section class="footer-contacts">
           <b>NЁRDS DESIGN STUDIO</b>
-          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная,д.19/8</p>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная,д.19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
           <a href="#">Напишите нам!</a>
         </section>
