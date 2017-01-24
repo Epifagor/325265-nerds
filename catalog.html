@@ -33,99 +33,103 @@
       </div>
     </header>
     <main>
-      <form>
-        <div class="price-controls">
-          <label for="price-count">Стоимость</label>
-          <input type="range" name="price-count" id="price-count" min="0" max="15000" step="1" value="10000">
-          от <input class="min-price" type="text" value="5 000">
-          до <input class="max-price" type="text" value="15 000">
-        </div>
-        <b>Сетка</b>
-        <label>
-          <input type="radio" name="net" value="адаптивная" checked>
-          Адаптивная
-        </label>
-        <label>
-          <input  type="radio" name="net" value="фиксированная">
-          Фиксированная
-        </label>
-        <label>
-          <input  type="radio" name="net" value="резиновая">
-          Резиновая
-        </label>
-        <b>Особенности</b>
-        <input type="checkbox" name="slider" id="slider" checked>
-        <label for="slider">Слайдер</label>
-        <input type="checkbox" name="features" id="features">
-        <label for="features">Блок преимуществ</label>
-        <input type="checkbox" name="news" id="news" checked>
-        <label for="news">Новости</label>
-        <input type="checkbox" name="galery" id="galery">
-        <label for="galery">Галерея</label>
-        <input type="checkbox" name="basket" id="basket">
-        <label for="basket">Корзина</label>
-        <input type="submit" name="filters" value="Показать">
-      </form>
-      <section class="classify">
-      <b>Сортировать:</b>
-      <ul>
-        <li><a href="#">по цене</a></li>
-        <li><a href="#">по типу</a></li>
-        <li><a href="#">по названию</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Вниз</a></li>
-        <li><a href="#">Вверх</a></li>
-      </ul>
-      </section>
-      <article class="catalog-item">
-        <img src="http://placehold.it/200x300" alt="Sedona" width="200" height="300">
-        <div class="hover">
-          <a href="#"><b>Sedona</b></a>
-          <p>Информационный сайт для туристов</p>
-          <a href="#">9 900 РУБ.</a>
-        </div>
-      </article>
-      <article class="catalog-item">
-        <img src="http://placehold.it/200x300" alt="Pink App" width="200" height="300">
-        <div class="hover">
-          <a href="#"><b>Pink App</b></a>
-          <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <a href="#">9 900 РУБ.</a>
-        </div>
-      </article>
-      <article class="catalog-item">
-        <img src="http://placehold.it/200x300" alt="Barbershop Borodinski" width="200" height="300">
-        <div class="hover">
-          <a href="#"><b>Barbershop Borodinski</b></a>
-          <p></p>
-          <a href="#">9 900 РУБ.</a>
+      <section>
+        <form>
+          <div class="price-controls">
+            <b>Стоимость</b>
+            <input type="range" name="price-count" id="price-count" min="0" max="15000" step="1" value="10000">
+            от <input class="min-price" type="text" value="5 000">
+            до <input class="max-price" type="text" value="15 000">
           </div>
-      </article>
-      <article class="catalog-item">
+          <b>Сетка</b>
+          <label>
+            <input type="radio" name="net" value="адаптивная" checked>
+            Адаптивная
+          </label>
+          <label>
+            <input  type="radio" name="net" value="фиксированная">
+            Фиксированная
+          </label>
+          <label>
+            <input  type="radio" name="net" value="резиновая">
+            Резиновая
+          </label>
+          <b>Особенности</b>
+            <input type="checkbox" name="slider" id="slider" checked>
+          <label for="slider">Слайдер</label>
+            <input type="checkbox" name="features" id="features">
+            <label for="features">Блок преимуществ</label>
+            <input type="checkbox" name="news" id="news" checked>
+            <label for="news">Новости</label>
+            <input type="checkbox" name="galery" id="galery">
+            <label for="galery">Галерея</label>
+            <input type="checkbox" name="basket" id="basket">
+          <label for="basket">Корзина</label>
+            <input type="submit" name="filters" value="Показать">
+        </form>
+      </section>
+      <section class="classify">
+        <b>Сортировать:</b>
+        <ul>
+          <li><a href="#">по цене</a></li>
+          <li><a href="#">по типу</a></li>
+          <li><a href="#">по названию</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Вниз</a></li>
+          <li><a href="#">Вверх</a></li>
+        </ul>
+      </section>
+      <section>
+        <article class="catalog-item">
+          <img src="http://placehold.it/200x300" alt="Sedona" width="200" height="300">
+          <div class="hover">
+            <a href="#"><h2>Sedona</h2></a>
+            <p>Информационный сайт для туристов</p>
+            <a href="#">9 900 РУБ.</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <img src="http://placehold.it/200x300" alt="Pink App" width="200" height="300">
+          <div class="hover">
+            <a href="#"><h2>Pink App</h2></a>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a href="#">9 900 РУБ.</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <img src="http://placehold.it/200x300" alt="Barbershop Borodinski" width="200" height="300">
+          <div class="hover">
+            <a href="#"><h2>Barbershop Borodinski</h2></a>
+            <p></p>
+            <a href="#">9 900 РУБ.</a>
+          </div>
+        </article>
+        <article class="catalog-item">
           <img src="http://placehold.it/200x300" alt="Mishka" width="200" height="300">
           <div class="hover">
-          <a href="#"><b>Mishka</b></a>
-          <p></p>
-          <a href="#">9 900 РУБ.</a>
-        </div>
-      </article>
-      <article class="catalog-item">
-        <img src="http://placehold.it/200x300" alt="A+" width="200" height="300">
-        <div class="hover">
-          <a href="#"><b>A+</b></a>
-          <p></p>
-          <a href="#">9 900 РУБ.</a>
-        </div>
-      </article>
-      <article class="catalog-item">
-        <img src="http://placehold.it/200x300" alt="Кваст" width="200" height="300">
-        <div class="hover">
-          <a href="#"><b>Кваст</b></a>
-          <p></p>
-          <a href="#">9 900 РУБ.</a>
-        </div>
-      </article>
+            <a href="#"><h2>Mishka</h2></a>
+            <p></p>
+            <a href="#">9 900 РУБ.</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <img src="http://placehold.it/200x300" alt="A+" width="200" height="300">
+          <div class="hover">
+            <a href="#"><h2>A+</h2></a>
+            <p></p>
+            <a href="#">9 900 РУБ.</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <img src="http://placehold.it/200x300" alt="Кваст" width="200" height="300">
+          <div class="hover">
+            <a href="#"><h2>Кваст</h2></a>
+            <p></p>
+            <a href="#">9 900 РУБ.</a>
+          </div>
+        </article>
+      </section>
       <ul>
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
