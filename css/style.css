@@ -1,20 +1,172 @@
-body{
+body {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-  font-family: Myriad Pro;  
+  font-family: Myriad Pro;
+ 
 }
 
-h1{
+h1 {
+  width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
-  font-family: Myriad Pro;
-  
+
 }
-h2{
+h2 {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  font-family: Myriad Pro;
 }
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  margin-bottom: 80px;
+}
+
+.header-logo {
+  float: left;
+  width: 160px;
+  margin-right: 200px;
+}
+
+.main-navigation{
+  float: left;
+  width: 440px;
+}
+
+.user-block {
+  float: right;
+  width: 160px;
+  text-align: right
+}
+
+.slider {
+  float: left;
+  width: 1160px;
+  margin-top: 33px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.about-us {
+  margin-bottom: 80px;
+}
+
+.description {
+  float:left;
+  width: 660px;
+}
+
+.numbers {
+  float: right;
+  width: 360px;
+}
+
+.projects-logo {
+  float: left;
+  width: 260px;
+  padding-bottom: 55px;
+  padding-top: 55px;
+  margin-right: 40px;
+  text-align: center; 
+}
+
+.projects-logo:last-child {
+  margin-right: 0;
+}
+
+.main-footer {
+  margin-top: 80px;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  padding: 50px;
+}
+
+.footer-btn {
+  float:left;
+  width: 260px;
+  margin-right: 140px;
+}
+
+.footer-call {
+  float:left;
+  width: 560px;
+}
+
+form {
+  float: left;
+  width: 260px;
+}
+
+.catalog{
+  margin-left: 400px;
+  width: 760px;
+  font-size: 0;
+}
+
+.catalog-item {
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.catalog-item:nth-child(2n){
+  margin-right: 0px;
+}
+
+.classify{
+  margin-bottom: 60px;
+  font-size:16px;
+}
+}
+.classify b{
+  float:left;
+}
+
+.filter {
+ float:right;
+}
+
+.switch {
+  float:right;
+}
+
+.pages {
+  float:left;
+  font-size:16px;
+}
+
+
+

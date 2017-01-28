@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <section class="header-logo">
           <a href="#"><img src="img/nerds-logo.png" width="160" height="65" alt="Дизайн-студия Nerds"></a>
         </section>
@@ -50,75 +50,95 @@
       </div>
     </header>
     <main class="container">
-      <section class="features">
+      <section class="features clearfix">
         <ul>
-          <li class="feature-item">
+          <li class="features-item">
             <h2>Веб-сайты</h2>
             <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
             <a href="#">Заказать</a>
           </li>
-          <li class="feature-item">
+          <li class="features-item">
             <h2>Приложения</h2>
             <p>Покорите топ-10 приложений в App-Store и Google-Play</p>
             <a href="#">Заказать</a>
           </li>
-          <li class="feature-item">
+          <li class="features-item">
             <h2>Презентации</h2>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <a href="#">Заказать</a>
           </li>
         </ul>
       </section>
-      <section class="about-us">
-        <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <b>Выполняем заказы на разработку:</b>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-        <div class="index-logo">
-           <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Дизайн-студия Nerds">
+      <section class="about-us clearfix">
+        <div class="description">
+          <p>
+            <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+          </p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <b>Выполняем заказы на разработку:</b>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
         </div>
-           <b>С 2004 года любим точность во всем:</b>
-        <ul>
-          <li>
-            <b>146%</b>
-            <p>Уровень самоотдачи</p>
-          </li>
-          <li>
-            <b>100%</b>
-            <p>Соблюдение сроков</p>
-          </li>
-          <li>
-            <b>50%</b>
-            <p>Минимальная предоплата</p>
-          </li>
-        </ul>
+        <div class="numbers">
+          <div class="index-logo">
+            <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Дизайн-студия Nerds">
+          </div>
+          <b>С 2004 года любим точность во всем:</b>
+          <ul>
+            <li>
+              <b>146%</b>
+              <p>Уровень самоотдачи</p>
+            </li>
+            <li>
+              <b>100%</b>
+              <p>Соблюдение сроков</p>
+            </li>
+            <li>
+              <b>50%</b>
+              <p>Минимальная предоплата</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="projects">
-        <img src="img/logo-html-academy.png" width="199" height="68" alt="HTML-Academy">
-        <img src="img/logo-borodinski.png" width="199" height="68" alt="Borodinski">
-        <img src="img/logo-pink.png" width="199" height="68" alt="Pink">
-        <img src="img/logo-mishka.png" width="199" height="68" alt="Mishka">
+        <div class="container clearfix">
+          <div class="projects-logo">
+            <img src="img/logo-html-academy.png" width="199" height="68" alt="HTML-Academy">
+          </div>
+          <div class="projects-logo">
+            <img src="img/logo-borodinski.png" width="199" height="68" alt="Borodinski">
+          </div>
+          <div class="projects-logo">
+            <img src="img/logo-pink.png" width="199" height="68" alt="Pink">
+          </div>
+          <div class="projects-logo">
+            <img src="img/logo-mishka.png" width="199" height="68" alt="Mishka">
+          </div>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
-          <img src="img/map.jpg" width="1440" height="416" alt="Карта">
           <b>NЁRDS DESIGN STUDIO</b>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная,д.19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
           <a href="#">Напишите нам!</a>
         </section>
+        <img src="img/map.jpg" width="1440" height="416" alt="Карта">
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+          <div class="footer-btn">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </div>
+          <div class="footer-call">
+            <p>Давайте дружить, это выгодно!</p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </section>
       </div>
     </footer>

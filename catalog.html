@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <section class="header-logo">
            <a href="#"><img src="img/nerds-logo.png" width="160" height="65" alt="Дизайн-студия Nerds"></a>
         </section>
@@ -34,125 +34,153 @@
       </div>
     </header>
     <main>
-      <section>
+      <div class="container clearfix">
         <form>
           <div class="price-controls">
             <b>Стоимость</b>
+            <br>
             <input type="range" name="price-count" id="price-count" min="0" max="15000" step="1" value="10000">
-            от <input class="min-price" type="text" value="5 000">
-            до <input class="max-price" type="text" value="15 000">
+            <input class="min-price" type="text" value="5 000"> от
+            <input class="max-price" type="text" value="15 000">до
           </div>
-          <b>Сетка</b>
-          <label>
-            <input type="radio" name="net" value="адаптивная" checked>
-            Адаптивная
-          </label>
-          <label>
-            <input  type="radio" name="net" value="фиксированная">
-            Фиксированная
-          </label>
-          <label>
-            <input  type="radio" name="net" value="резиновая">
-            Резиновая
-          </label>
+          <ul>
+            <b>Сетка</b>
+            <li>
+              <label>
+              <input type="radio" name="net" value="адаптивная" checked>
+              Адаптивная
+              </label>
+            </li>
+            <li>
+              <label>
+              <input  type="radio" name="net" value="фиксированная">
+              Фиксированная
+              </label>
+            </li>
+            <li>
+              <label>
+              <input  type="radio" name="net" value="резиновая">
+              Резиновая
+              </label>
+            </li>
+          </ul>
+          <ul>
           <b>Особенности</b>
+          <li>
             <input type="checkbox" name="slider" id="slider" checked>
-          <label for="slider">Слайдер</label>
+            <label for="slider">Слайдер</label>
+          </li>
+          <li>
             <input type="checkbox" name="features" id="features">
             <label for="features">Блок преимуществ</label>
+          </li>
+          <li>
             <input type="checkbox" name="news" id="news" checked>
             <label for="news">Новости</label>
+          </li>
+          <li>
             <input type="checkbox" name="galery" id="galery">
             <label for="galery">Галерея</label>
+          </li>
+          <li>
             <input type="checkbox" name="basket" id="basket">
-          <label for="basket">Корзина</label>
+            <label for="basket">Корзина</label>
+          </li>
+          <br>
             <input type="submit" name="filters" value="Показать">
+          </ul>
         </form>
-      </section>
-      <section class="classify">
-        <b>Сортировать:</b>
-        <ul>
-          <li><a href="#">по цене</a></li>
-          <li><a href="#">по типу</a></li>
-          <li><a href="#">по названию</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Вниз</a></li>
-          <li><a href="#">Вверх</a></li>
-        </ul>
-      </section>
-      <section>
-        <article class="catalog-item">
-          <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
-          <div class="hover">
-            <a href="#"><h3>Sedona</h3></a>
-            <p>Информационный сайт для туристов</p>
-            <a href="#">9 900 РУБ.</a>
+      <div class="catalog">
+        <section class="classify">
+          <b>Сортировать:</b>
+          <div class="switch">
+            <a href="#">Вниз</a>
+            <a href="#">Вверх</a>
           </div>
-        </article>
-        <article class="catalog-item">
-          <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
-          <div class="hover">
-            <a href="#"><h3>Pink App</h3></a>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a href="#">9 900 РУБ.</a>
+          <div class="filter">
+            <a href="#">по цене</a>
+            <a href="#">по типу</a>
+            <a href="#">по названию</a>
           </div>
-        </article>
-        <article class="catalog-item">
-          <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop Borodinski">
-          <div class="hover">
-            <a href="#"><h3>Barbershop Borodinski</h3></a>
-            <p></p>
-            <a href="#">9 900 РУБ.</a>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
-          <div class="hover">
-            <a href="#"><h3>Mishka</h3></a>
-            <p></p>
-            <a href="#">9 900 РУБ.</a>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <img src="img/img-aplus.jpg" width="360" height="576" alt="A+">
-          <div class="hover">
-            <a href="#"><h3>A+</h3></a>
-            <p></p>
-            <a href="#">9 900 РУБ.</a>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
-          <div class="hover">
-            <a href="#"><h3>Кваст</h3></a>
-            <p></p>
-            <a href="#">9 900 РУБ.</a>
-          </div>
-        </article>
-      </section>
-      <ul>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">Следующая</a></li>
-      </ul>
+        </section>
+        <section class="items">
+          <article class="catalog-item">
+            <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+            <div class="hover">
+              <a href="#"><h3>Sedona</h3></a>
+              <p></p>
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
+            <div class="hover">
+              <a href="#"><h3>Pink App</h3></a>
+              <p></p>
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop Borodinski">
+            <div class="hover">
+              <a href="#"><h3>Barbershop Borodinski</h3></a>
+              <p></p>
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
+            <div class="hover">
+              <a href="#"><h3>Mishka</h3></a>
+              <p></p>
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="img/img-aplus.jpg" width="360" height="576" alt="A+">
+            <div class="hover">
+              <a href="#"><h3>A+</h3></a>
+              <p></p>
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
+            <div class="hover">
+              <a href="#"><h3>Кваст</h3></a>
+              <p></p>
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </article>
+        </section>
+        <div class="pages">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Следующая</a>
+        </div>
+        </div>
+      </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
-          <img src="img/map.jpg" width="1440" height="416" alt="Карта">
           <b>NЁRDS DESIGN STUDIO</b>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная,д.19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
           <a href="#">Напишите нам!</a>
         </section>
+        <img src="img/map.jpg" width="1440" height="416" alt="Карта">
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+          <div class="footer-btn">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </div>
+          <div class="footer-call">
+            <p>Давайте дружить, это выгодно!</p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </section>
       </div>
     </footer>
