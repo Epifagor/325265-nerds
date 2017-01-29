@@ -3,7 +3,7 @@ body {
   line-height: 24px;
   color: #283136;
   font-family: Myriad Pro;
- 
+
 }
 
 h1 {
@@ -61,10 +61,6 @@ h2 {
   margin-top: 33px;
 }
 
-.features {
-  margin-bottom: 80px;
-}
-
 .features-item {
   float: left;
   width: 300px;
@@ -89,13 +85,23 @@ h2 {
   width: 360px;
 }
 
+.numbers-item {
+  display: inline-block;
+  width: 100px;
+  margin-right: 10px;
+  margin-top: 46px;
+}
+.numbers-item:last-child{
+   margin-right: 0px;
+}
+
 .projects-logo {
   float: left;
   width: 260px;
   padding-bottom: 55px;
   padding-top: 55px;
   margin-right: 40px;
-  text-align: center; 
+  text-align: center;
 }
 
 .projects-logo:last-child {
@@ -156,7 +162,7 @@ form {
 }
 
 .filter {
- float:right;
+  float:right;
 }
 
 .switch {

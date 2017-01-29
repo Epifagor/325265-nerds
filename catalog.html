@@ -35,131 +35,132 @@
     </header>
     <main>
       <div class="container clearfix">
-        <form>
-          <div class="price-controls">
-            <b>Стоимость</b>
-            <br>
-            <input type="range" name="price-count" id="price-count" min="0" max="15000" step="1" value="10000">
-            <input class="min-price" type="text" value="5 000"> от
-            <input class="max-price" type="text" value="15 000">до
-          </div>
-          <ul>
-            <b>Сетка</b>
-            <li>
-              <label>
-              <input type="radio" name="net" value="адаптивная" checked>
-              Адаптивная
-              </label>
-            </li>
-            <li>
-              <label>
-              <input  type="radio" name="net" value="фиксированная">
-              Фиксированная
-              </label>
-            </li>
-            <li>
-              <label>
-              <input  type="radio" name="net" value="резиновая">
-              Резиновая
-              </label>
-            </li>
-          </ul>
-          <ul>
-          <b>Особенности</b>
-          <li>
-            <input type="checkbox" name="slider" id="slider" checked>
-            <label for="slider">Слайдер</label>
-          </li>
-          <li>
-            <input type="checkbox" name="features" id="features">
-            <label for="features">Блок преимуществ</label>
-          </li>
-          <li>
-            <input type="checkbox" name="news" id="news" checked>
-            <label for="news">Новости</label>
-          </li>
-          <li>
-            <input type="checkbox" name="galery" id="galery">
-            <label for="galery">Галерея</label>
-          </li>
-          <li>
-            <input type="checkbox" name="basket" id="basket">
-            <label for="basket">Корзина</label>
-          </li>
-          <br>
+        <section>
+          <form action="#" method="get">
+            <div class="price-controls">
+              <b>Стоимость</b>
+              <br>
+              <input type="range" name="price-count" id="price-count" min="0" max="15000" step="1" value="10000">
+              <input class="min-price" type="text" value="5 000"> от
+              <input class="max-price" type="text" value="15 000">до
+            </div>
+            <ul>
+              <b>Сетка</b>
+              <li>
+                <label>
+                <input type="radio" name="net" value="адаптивная" checked>
+                Адаптивная
+                </label>
+              </li>
+              <li>
+                <label>
+                <input  type="radio" name="net" value="фиксированная">
+                Фиксированная
+                </label>
+              </li>
+              <li>
+                <label>
+                <input  type="radio" name="net" value="резиновая">
+                Резиновая
+                </label>
+              </li>
+            </ul>
+            <ul>
+              <b>Особенности</b>
+              <li>
+                <input type="checkbox" name="slider" id="slider" checked>
+                <label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="features" id="features">
+                <label for="features">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="news" id="news" checked>
+                <label for="news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="galery" id="galery">
+                <label for="galery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="basket" id="basket">
+                <label for="basket">Корзина</label>
+              </li>
+            </ul>
             <input type="submit" name="filters" value="Показать">
-          </ul>
-        </form>
-      <div class="catalog">
-        <section class="classify">
-          <b>Сортировать:</b>
-          <div class="switch">
-            <a href="#">Вниз</a>
-            <a href="#">Вверх</a>
+          </form>
+        </section>
+        <section class="catalog">
+          <div class="classify">
+            <b>Сортировать:</b>
+            <div class="switch">
+              <a href="#">Вниз</a>
+              <a href="#">Вверх</a>
+            </div>
+            <div class="filter">
+              <a href="#">по цене</a>
+              <a href="#">по типу</a>
+              <a href="#">по названию</a>
+            </div>
           </div>
-          <div class="filter">
-            <a href="#">по цене</a>
-            <a href="#">по типу</a>
-            <a href="#">по названию</a>
+          <div class="items">
+            <article class="catalog-item">
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+              <div class="hover">
+                <a href="#"><h3>Sedona</h3></a>
+                <p></p>
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
+              <div class="hover">
+                <a href="#"><h3>Pink App</h3></a>
+                <p></p>
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop Borodinski">
+              <div class="hover">
+                <a href="#"><h3>Barbershop Borodinski</h3></a>
+                <p></p>
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
+              <div class="hover">
+                <a href="#"><h3>Mishka</h3></a>
+                <p></p>
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="A+">
+              <div class="hover">
+                <a href="#"><h3>A+</h3></a>
+                <p></p>
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
+              <div class="hover">
+                <a href="#"><h3>Кваст</h3></a>
+                <p></p>
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </article>
+          </div>
+          <div class="pages">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Следующая</a>
           </div>
         </section>
-        <section class="items">
-          <article class="catalog-item">
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
-            <div class="hover">
-              <a href="#"><h3>Sedona</h3></a>
-              <p></p>
-              <a href="#">9 900 РУБ.</a>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
-            <div class="hover">
-              <a href="#"><h3>Pink App</h3></a>
-              <p></p>
-              <a href="#">9 900 РУБ.</a>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop Borodinski">
-            <div class="hover">
-              <a href="#"><h3>Barbershop Borodinski</h3></a>
-              <p></p>
-              <a href="#">9 900 РУБ.</a>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
-            <div class="hover">
-              <a href="#"><h3>Mishka</h3></a>
-              <p></p>
-              <a href="#">9 900 РУБ.</a>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="A+">
-            <div class="hover">
-              <a href="#"><h3>A+</h3></a>
-              <p></p>
-              <a href="#">9 900 РУБ.</a>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
-            <div class="hover">
-              <a href="#"><h3>Кваст</h3></a>
-              <p></p>
-              <a href="#">9 900 РУБ.</a>
-            </div>
-          </article>
-        </section>
-        <div class="pages">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">Следующая</a>
-        </div>
-        </div>
       </div>
     </main>
     <footer class="main-footer">
