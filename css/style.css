@@ -89,6 +89,10 @@ h2 {
   font-size: 0px;
 }
 
+.numbers > b {
+  font-size: 16px;
+}
+
 .numbers-item {
   display: inline-block;
   width: 100px;
@@ -178,7 +182,6 @@ form {
 }
 
 .pages {
-  float:left;
   font-size:16px;
 }
 
