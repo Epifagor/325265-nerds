@@ -4,9 +4,11 @@
       <meta charset="utf-8">
       <title>HTML-Academy: Nerds</title>
       <link href="css/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-     <header class="main-header">
+      <header class="main-header">
       <div class="container">
         <div class="header-top clearfix">
           <section class="header-logo">
@@ -15,16 +17,16 @@
           <nav class="main-navigation">
             <ul>
               <li>
-                <a href="#">Студия</a>
+                <a href="#">cтудия</a>
               </li>
               <li>
-                <a href="#">Клиенты</a>
+                <a href="#">клиенты</a>
               </li>
               <li>
-                <a href="#">Магазин</a>
+                <a class="active-page" href="#">магазин</a>
               </li>
               <li>
-                <a href="#">Контакты</a>
+                <a href="#">контакты</a>
               </li>
             </ul>
           </nav>
@@ -38,68 +40,71 @@
     <main>
       <div class="container clearfix">
         <form action="#" method="get">
-          <div class="price-controls">
-            <b>Стоимость</b>
-            <br>
-            <input type="range" name="price-count" id="price-count" min="0" max="15000" step="1" value="10000">
-            <input class="min-price" type="text" value="5 000"> от
-            <input class="max-price" type="text" value="15 000">до
-          </div>
-          <ul>
-            <b>Сетка</b>
-            <li>
-              <label>
-              <input type="radio" name="net" value="адаптивная" checked>
-              Адаптивная
-              </label>
+          <div class="range-filter">
+            <p>Стоимость</p>
+            <div class="range-controls">
+             <div class="scale">
+               <div class="bar" style="width: 70%"></div>
+             </div>
+             <div class="toggle toggle-min"></div>
+             <div class="toggle toggle-max"></div>
+           </div>
+           <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+           </div>
+         </div>
+          <ul class="radio">
+            <p>Сетка</p>
+            <li class="radio-input">
+              <input type="radio" name="layout" value="адаптивная" id="adoptive" checked>
+              <label class="radio-label" for="adoptive">Адаптивная</label>
             </li>
-            <li>
-              <label>
-              <input  type="radio" name="net" value="фиксированная">
-              Фиксированная
-              </label>
+            <li class="radio-input">
+              <input type="radio" name="layout" value="фиксированная" id="fixed">
+              <label for="fixed">Фиксированная </label>
             </li>
-            <li>
-              <label>
-              <input  type="radio" name="net" value="резиновая">
-              Резиновая
-              </label>
+            <li class="radio-input">
+              <input type="radio" name="layout" value="резиновая" id="flex">
+              <label for="flex">Резиновая</label>
             </li>
           </ul>
-          <ul>
-            <b>Особенности</b>
-            <li>
+          <ul class="checkbox">
+            <p>Особенности</p>
+            <li class="checkbox-input">
               <input type="checkbox" name="slider" id="slider" checked>
               <label for="slider">Слайдер</label>
             </li>
-            <li>
+            <li class="checkbox-input">
               <input type="checkbox" name="features" id="features">
               <label for="features">Блок преимуществ</label>
             </li>
-            <li>
+            <li class="checkbox-input">
               <input type="checkbox" name="news" id="news" checked>
               <label for="news">Новости</label>
             </li>
-            <li>
+            <li class="checkbox-input">
               <input type="checkbox" name="galery" id="galery">
               <label for="galery">Галерея</label>
             </li>
-            <li>
+            <li class="checkbox-input">
               <input type="checkbox" name="basket" id="basket">
               <label for="basket">Корзина</label>
             </li>
           </ul>
-          <input type="submit" name="filters" value="Показать">
+          <div class="form-btn">
+              <a href="#">Показать</a>
+            </div>
         </form>
         <section class="catalog">
           <div class="classify clearfix">
-            <b>Сортировать:</b>
-            <div class="switch">
-              <a href="#">Вниз</a>
-              <a href="#">Вверх</a>
+            <p>Сортировать:</p>
+            <div class="sort">
+              <a class="sort-down" href="#">Вниз</a>
+              <a class="sort-up"href="#">Вверх</a>
             </div>
             <div class="filter">
-              <a href="#">по цене</a>
+              <a class="active-filter" href="#">по цене</a>
               <a href="#">по типу</a>
               <a href="#">по названию</a>
             </div>
@@ -108,79 +113,93 @@
             <article class="catalog-item">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
               <div class="hover">
-                <a href="#"><h3>Sedona</h3></a>
+                <h3><a href="#">Sedona</a></h3>
                 <p></p>
-                <a href="#">9 900 РУБ.</a>
+                <div class="btn price-btn">
+                  <a href="#">9 900 РУБ.</a>
+                </div>
               </div>
             </article>
             <article class="catalog-item">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
               <div class="hover">
-                <a href="#"><h3>Pink App</h3></a>
+                <h3><a href="#">Pink App</a></h3>
                 <p></p>
-                <a href="#">9 900 РУБ.</a>
+                <div class="btn price-btn">
+                  <a href="#">9 900 РУБ.</a>
+                </div>
               </div>
             </article>
             <article class="catalog-item">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop Borodinski">
               <div class="hover">
-                <a href="#"><h3>Barbershop Borodinski</h3></a>
+                <h3><a href="#">Barbershop Borodinski</a></h3>
                 <p></p>
-                <a href="#">9 900 РУБ.</a>
+                <div class="btn price-btn">
+                 <a href="#">9 900 РУБ.</a>
+                </div>
               </div>
             </article>
             <article class="catalog-item">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
               <div class="hover">
-                <a href="#"><h3>Mishka</h3></a>
+                <h3><a href="#">Mishka</a></h3>
                 <p></p>
-                <a href="#">9 900 РУБ.</a>
+                <div class="btn price-btn">
+                 <a href="#">9 900 РУБ.</a>
+                </div>
               </div>
             </article>
             <article class="catalog-item">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="A+">
               <div class="hover">
-                <a href="#"><h3>A+</h3></a>
+                <h3><a href="#">A+</a></h3>
                 <p></p>
-                <a href="#">9 900 РУБ.</a>
+                <div class="btn price-btn">
+                  <a href="#">9 900 РУБ.</a>
+                </div>
               </div>
             </article>
             <article class="catalog-item">
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
               <div class="hover">
-                <a href="#"><h3>Кваст</h3></a>
+                <h3><a href="#">Кваст</a></h3>
                 <p></p>
-                <a href="#">9 900 РУБ.</a>
+                <div class="btn price-btn">
+                  <a href="#">9 900 РУБ.</a>
+                </div>
               </div>
             </article>
           </div>
-          <div class="pages">
-            <a href="#">1</a>
+          <div class="paginator">
+            <a href="#" class="active">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
-            <a href="#">Следующая</a>
+            <a href="#" class="next">Следующая</a>
           </div>
         </section>
       </div>
     </main>
-    <footer class="main-footer">
+     <footer class="main-footer">
       <img src="img/map.jpg" width="1440" height="416" alt="Карта">
       <div class="container">
         <section class="footer-contacts">
-          <b>NЁRDS DESIGN STUDIO</b>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная,д.19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a href="#">Напишите нам!</a>
+          <p class="company-name">NЁRDS DESIGN STUDIO</p>
+          <p class="contact adress">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д.19/8</p>
+          <p class="contact phone-number">тел. +7 (812) 275-75-75</p>
+          <div class="contact feedback-btn">
+            <a href="#">Напишите нам</a>
+          </div>
         </section>
         <section class="footer-social clearfix">
           <div class="footer-btn">
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Facebook</a>
+            <a class="social-btn social-btn-insta" href="#">Instagramm</a>
           </div>
-          <div class="footer-call">
-            <p>Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+          <div class="social-info">
+            <p class="social-benefit">Давайте дружить, это выгодно!</p>
+            <p class="social-discount">Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </section>
       </div>
