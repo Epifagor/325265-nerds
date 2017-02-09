@@ -35,64 +35,66 @@
           </section>
         </div>
         <section class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
           <div class="slide">
-          <div class="slide-info">
-            <p class="slide-header">Долго, дорого, скурпулезно.</p>
-            <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
-            <div class="btn slide-btn">
-                <a href="#">Узнать больше</a>
-              </div>
-            </div>
-          </div>
-        <div class="slide">
             <div class="slide-info">
-              <p></p>
-              <p></p>
-              <div class="btn slide-btn">
-                <a href="#">Узнать больше</a>
-              </div>
+              <div class="slide-title">Долго, дорого, скрупулезно.</div>
+              <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+              <a class="btn slider-btn" href="#">Узнать больше</a>
             </div>
           </div>
           <div class="slide">
             <div class="slide-info">
-              <p></p>
-              <p></p>
-              <div class="btn slide-btn">
-                <a href="#">Узнать больше</a>
-              </div>
+              <div class="slide-title">Любим математику
+как никто другой</div>
+              <p>Никакого креатива, только математические формулы <br>
+для расчета идеальных пропорций.</p>
+              <a class="btn slider-btn" href="#">Узнать больше</a>
             </div>
           </div>
-        </section>
+          <div class="slide">
+            <div class="slide-info">
+              <div class="slide-title">Только ночь, <br> только хардкор</div>
+              <p>Работать днем, как все? Мы против этого. <br>
+Ближе к полуночи работа только начинается.</p>
+              <a class="btn slider-btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+      </div>
+    </section>
       </div>
     </header>
-    <main class="container">
+    <main>
+      <div class="container">
       <section class="main-top features">
         <ul class="clearfix">
           <li class="features-item web">
             <div class="features-info">
             <h2>Веб-сайты</h2>
             <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-            <div class="btn features-btn">
-              <a href="#">Заказать</a>
-            </div>
+              <a class="btn features-btn" href="#"><span>Заказать</span></a>
             </div>
           </li>
           <li class="features-item app">
             <div class="features-info">
             <h2>Приложения</h2>
             <p>Покорите топ-10 приложений в App-Store и Google-Play</p>
-            <div class="btn features-btn">
-              <a href="#">Заказать</a>
-            </div>
+              <a class="btn features-btn" href="#"><span>Заказать</span></a>
             </div>
           </li>
           <li class="features-item presentation">
             <div class="features-info">
             <h2>Презентации</h2>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <div class="btn features-btn">
-              <a href="#">Заказать</a>
-            </div>
+             <a class="btn features-btn" href="#"><span>Заказать</span></a>
             </div>
           </li>
         </ul>
@@ -103,15 +105,13 @@
           <p class="description-main">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="description-list">Выполняем заказы на разработку:</p>
           <ul>
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для iOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
+            <li class="description-item">Веб-сайтов любой сложности</li>
+            <li class="description-item">Мобильных приложений для iOS и Android</li>
+            <li class="description-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
         <div class="numbers">
-          <div class="index-logo">
-            <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Дизайн-студия Nerds">
-          </div>
+          <img class="index-logo" src="img/nerds-illustration.jpg" width="360" height="208" alt="Дизайн-студия Nerds">
           <p class="numbers-list">С 2004 года любим точность во всем:</p>
           <div class="numbers-item">
             <p class="number">146%</p>
@@ -128,32 +128,32 @@
         </div>
       </section>
       <section class="projects clearfix">
-          <div class="projects-logo">
+          <div class="project-logo">
             <img src="img/logo-html-academy.png" width="199" height="68" alt="HTML-Academy">
           </div>
-          <div class="projects-logo">
+          <div class="project-logo">
             <img src="img/logo-borodinski.png" width="209" height="90" alt="Borodinski">
           </div>
-          <div class="projects-logo">
+          <div class="project-logo">
             <img src="img/logo-pink.png" width="185" height="52" alt="Pink">
           </div>
-          <div class="projects-logo">
+          <div class="project-logo">
             <img src="img/logo-mishka.png" width="173" height="84" alt="Mishka">
           </div>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
-      <img src="img/map.jpg" width="1440" height="416" alt="Карта">
-      <div class="container">
+      <div class="footer-top">
         <section class="footer-contacts">
           <p class="company-name">NЁRDS DESIGN STUDIO</p>
           <p class="contact adress">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д.19/8</p>
           <p class="contact phone-number">тел. +7 (812) 275-75-75</p>
-          <div class="contact feedback-btn">
-            <a href="#">Напишите нам</a>
-          </div>
+            <a class="contact feedback-btn" href="#">Напишите нам</a>
         </section>
+        </div>
         <section class="footer-social clearfix">
+          <div class="container">
           <div class="footer-btn">
             <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
             <a class="social-btn social-btn-fb" href="#">Facebook</a>
@@ -163,8 +163,8 @@
             <p class="social-benefit">Давайте дружить, это выгодно!</p>
             <p class="social-discount">Скидка 10% для друзей из социальных сетей.</p>
           </div>
+            </div>
         </section>
-      </div>
     </footer>
   </body>
 </html>
