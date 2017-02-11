@@ -12,7 +12,7 @@
       <div class="container">
         <div class="header-top clearfix">
           <section class="header-logo">
-            <a href="#"><img src="img/nerds-logo.png" width="160" height="65" alt="Дизайн-студия Nerds"></a>
+            <a href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Дизайн-студия Nerds"></a>
           </section>
           <nav class="main-navigation">
             <ul>
@@ -39,7 +39,7 @@
     </header>
     <main>
       <div class="container clearfix">
-        <form action="#" method="get">
+        <form class="catalog-form" action="#" method="get">
           <div class="range-filter">
             <p>Стоимость</p>
             <div class="range-controls">
@@ -115,7 +115,7 @@
               <div class="hover">
                 <h3><a href="#">Sedona</a></h3>
                 <p>Информационный сайт <br>для туристов</p>
-                  <a class="btn price-btn" href="#"><span>9 900 РУБ.</span></a>
+                  <a class="btn price-btn" href="#">9 900 РУБ.</a>
               </div>
             </article>
             <article class="catalog-item">
@@ -123,7 +123,7 @@
               <div class="hover">
                 <h3><a href="#">Pink App</a></h3>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <a class="btn price-btn" href="#"><span>9 900 РУБ.</span></a>
+                <a class="btn price-btn" href="#">9 900 РУБ.</a>
               </div>
             </article>
             <article class="catalog-item">
@@ -131,7 +131,7 @@
               <div class="hover">
                 <h3><a href="#">Barbershop</a></h3>
                 <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
-                <a class="btn price-btn" href="#"><span>9 900 РУБ.</span></a>
+                <a class="btn price-btn" href="#">9 900 РУБ.</a>
               </div>
             </article>
             <article class="catalog-item">
@@ -139,7 +139,7 @@
               <div class="hover">
                 <h3><a href="#">Mishka</a></h3>
                 <p>Интернет-магазин <br> вязаных игрушек</p>
-                <a class="btn price-btn" href="#"><span>9 900 РУБ.</span></a>
+                <a class="btn price-btn" href="#">9 900 РУБ.</a>
               </div>
             </article>
             <article class="catalog-item">
@@ -147,7 +147,7 @@
               <div class="hover">
                 <h3><a href="#">A Plus</a></h3>
                 <p>Лендинг курсов повышения квалификации</p>
-                <a class="btn price-btn" href="#"><span>9 900 РУБ.</span></a>
+                <a class="btn price-btn" href="#">9 900 РУБ.></a>
               </div>
             </article>
             <article class="catalog-item">
@@ -155,7 +155,7 @@
               <div class="hover">
                 <h3><a href="#">Кваст</a></h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
-               <a class="btn price-btn" href="#"><span>9 900 РУБ.</span></a>
+               <a class="btn price-btn" href="#">9 900 РУБ.</a>
               </div>
             </article>
           </div>
@@ -168,7 +168,7 @@
         </section>
       </div>
     </main>
-       <footer class="main-footer">
+        <footer class="main-footer">
       <div class="footer-top">
         <section class="footer-contacts">
           <p class="company-name">NЁRDS DESIGN STUDIO</p>
@@ -191,5 +191,24 @@
             </div>
         </section>
     </footer>
+    <div class="modal-content">
+      <p class="write-us">Напишите нам</p>
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="feedback-form" action="#" method="post">
+        <div class="feedback-input user-data">
+          <label for="user-name">Ваше имя:</label>
+          <input  type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="feedback-input user-data">
+         <label for="user-email">Ваш e-mail:</label>
+         <input  type="text"  name="user-email" id="user-email" placeholder="Для отправки ответа">
+        </div>
+        <div class="feedback-input letter-content">
+          <label for="letter-content">Текст письма:</label>
+          <input type="text" name="letter=content" id="letter-content" placeholder="В свободной форме">
+        </div>
+        <input class="btn" type="submit" value="Отправить">
+      </form>
+    </div>
   </body>
 </html>
