@@ -3,12 +3,12 @@
     <head>
       <meta charset="utf-8">
       <title>HTML-Academy: Nerds</title>
+      <link rel="stylesheet" href="css/normalize.css">
       <link href="css/style.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-      <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-      <header class="main-header">
+      <header class="header catalog-header">
       <div class="container">
         <div class="header-top clearfix">
           <section class="header-logo">
@@ -37,7 +37,7 @@
         <h1>Магазин готовых шаблонов</h1>
       </div>
     </header>
-    <main>
+    <main class="main-catalog">
       <div class="container clearfix">
         <form class="catalog-form" action="#" method="get">
           <div class="range-filter">
@@ -50,12 +50,18 @@
              <div class="toggle toggle-max"></div>
            </div>
            <div class="price-controls">
-            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            <label class="min-price">
+              от
+              <input name="min-price" type="text" value="0">
+            </label>
+            <label class="max-price">
+              до
+              <input name="max-price" type="text" value="15000">
+            </label>
            </div>
          </div>
           <ul class="radio">
-            <p>Сетка</p>
+            <p>Сетка:</p>
             <li class="radio-input">
               <input type="radio" name="layout" value="адаптивная" id="adoptive" checked>
               <label class="radio-label" for="adoptive">Адаптивная</label>
@@ -70,7 +76,7 @@
             </li>
           </ul>
           <ul class="checkbox">
-            <p>Особенности</p>
+            <p>Особенности:</p>
             <li class="checkbox-input">
               <input type="checkbox" name="slider" id="slider" checked>
               <label for="slider">Слайдер</label>
@@ -147,7 +153,7 @@
               <div class="hover">
                 <h3><a href="#">A Plus</a></h3>
                 <p>Лендинг курсов повышения квалификации</p>
-                <a class="btn price-btn" href="#">9 900 РУБ.></a>
+                <a class="btn price-btn" href="#">9 900 РУБ.</a>
               </div>
             </article>
             <article class="catalog-item">
@@ -170,12 +176,14 @@
     </main>
         <footer class="main-footer">
       <div class="footer-top">
+        <div class="container">
         <section class="footer-contacts">
-          <p class="company-name">NЁRDS DESIGN STUDIO</p>
-          <p class="contact adress">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д.19/8</p>
+          <p class="company-name">Nёrds design studio</p>
+          <p class="contact adress">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
           <p class="contact phone-number">тел. +7 (812) 275-75-75</p>
             <a class="contact feedback-btn" href="#">Напишите нам</a>
         </section>
+          </div>
         </div>
         <section class="footer-social clearfix">
           <div class="container">
