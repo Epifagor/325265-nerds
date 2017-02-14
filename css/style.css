@@ -44,7 +44,10 @@ h2 {
   margin: 0;
   margin-bottom: 16px;
 }
-
+h3 {
+  margin: 0;
+  margin-bottom: 15px;
+}
 h3 a {
   display: block;
   font-size: 18px;
@@ -53,7 +56,6 @@ h3 a {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  margin-bottom: 28px;
   text-align: center;
 }
 
@@ -209,19 +211,20 @@ h3 a {
 
 .slider-controls {
   position:absolute;
-  bottom:98px;
+  bottom:97px;
   left: 537px;
-  width: 88px;
+  width: 87px;
   height:18px;
   z-index:1000;
+  font-size: 0;
 
 }
 
 .slider-controls label {
   display:inline-block;
   width: 16px;
-  height: 16px;
-  margin-right: 13px;
+  height: 15px;
+  margin-right: 16px;
   position: relative;
   background:white;
   vertical-align: top;
@@ -281,7 +284,7 @@ h3 a {
 .slide-info p {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .slider-btn {
@@ -338,7 +341,7 @@ h3 a {
   position: relative;
   padding-bottom: 80px;
   margin-bottom: 40px;
-  border-bottom: 3px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .features-item {
@@ -362,7 +365,7 @@ h3 a {
   display: block;
   width: 300px;
   height: 146px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .web::before {
@@ -384,7 +387,7 @@ h3 a {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 }
 
 .features-btn {
@@ -434,14 +437,14 @@ h3 a {
 
 .about {
   padding-bottom: 46px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   border-bottom: 3px solid #eeeeee;
 }
 
 .description {
   float:left;
   width: 660px;
-  padding-top: 35px;
+  padding-top: 34px;
 }
 
 .description ul {
@@ -466,7 +469,7 @@ h3 a {
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .description-item {
@@ -482,9 +485,9 @@ h3 a {
   content: "";
   position: absolute;
   top: 10px;
-  left: 2px;
+  left:0;
   background-color: #fb565a;
-  width: 26px;
+  width: 25px;
   height: 2px;
 }
 
@@ -498,7 +501,7 @@ h3 a {
 .index-logo {
   display: block;
   height: 208px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 }
 
 .numbers-list {
@@ -532,12 +535,11 @@ h3 a {
 }
 
 .number sup {
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .projects {
-  padding-bottom: 40px;
-  padding-top: 5px;
+  padding-bottom: 44px;
   border-bottom: 3px solid #eeeeee;
   font-size: 0;
 }
@@ -556,6 +558,8 @@ h3 a {
 
 .project-logo img {
   opacity: 0.2;
+  vertical-align:bottom
+
 
 }
 
@@ -571,11 +575,11 @@ h3 a {
 }
 
 .borodinski::before {
-  top: 20px;
+  top: 18px;
 }
 
 .academy::before {
-  top: 10px;
+  top: 7px;
 }
 
 .project-logo:last-child {
@@ -595,13 +599,13 @@ h3 a {
 }
 
 .footer-top {
-  background-image: url("../img/map.jpg");
+  background-image: url("../img/map&marker.jpg");
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: -47px -153px;
   height: 310px;
   padding-top: 55px;
-  padding-bottom: 55px;
-  margin-bottom: 63px;
+  padding-bottom: 49px;
+  margin-bottom: 69px;
 
 }
 
@@ -610,21 +614,10 @@ h3 a {
   width: 220px;
   padding: 50px;
   padding-top: 47px;
-  padding-bottom: 62px;
-  margin-bottom: 70px;
+  padding-bottom: 59px;
   background-color: #ffffff;
   position: relative;
 
-}
-
-.footer-contacts::before {
-  content: "";
-  position: absolute;
-  left: 783px;
-  top: 60px;
-  width: 231px;
-  height: 190px;
-  background-image: url("../img/map-marker.png");
 }
 
 .company-name {
@@ -632,7 +625,7 @@ h3 a {
   line-height: 30px;
   font-weight: 700;
   margin:0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   text-transform: uppercase;
 }
 
@@ -681,19 +674,21 @@ h3 a {
   float:left;
   width: 300px;
   margin-right: 100px;
+  font-size: 0;
 }
 
 .social-btn {
   display: inline-block;
   vertical-align: top;
-  width: 80px;
-  height: 80px;
+  width: 79px;
+  height: 79px;
   font-size: 0;
   background-color: #e1e1e1;
   position: relative;
   border: 0px solid #fff;
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: 12px;
+
 }
 
 .social-btn:hover {
@@ -921,9 +916,9 @@ h3 a {
 
 .range-filter p {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 25px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1011,13 +1006,13 @@ h3 a {
   margin-bottom: 46px;
 }
 
-ul > p {
+.form-header {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .radio-input {
@@ -1053,7 +1048,7 @@ input[type="radio"] + label::before {
 input[type="radio"]:checked + label::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   background-image: url("../img/sprite-1.png");
   background-repeat: no-repeat;
@@ -1075,7 +1070,7 @@ input[type="radio"] + label:hover::before {
 }
 
 .checkbox-input {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 input[type="checkbox"] {
@@ -1094,7 +1089,7 @@ input[type="checkbox"] + label::before {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   background-image: url("../img/sprite-1.png");
   background-repeat: no-repeat;
@@ -1213,12 +1208,12 @@ input[type="checkbox"] + label:hover::before {
 }
 
 .hover {
-  display: none;
+  display: block;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 240px;
-  padding-top: 35px;
+  padding-top: 24px;
   padding-bottom: 45px;
   padding-left: 60px;
   padding-right: 60px;
@@ -1232,7 +1227,8 @@ input[type="checkbox"] + label:hover::before {
 .hover p {
   font-size: 16px;
   line-height: 18px;
-  margin-bottom: 32px;
+  margin: 0;
+  margin-bottom: 30px;
   text-align: center;
   color: #666666;
 }
@@ -1357,8 +1353,8 @@ input[type="checkbox"] + label:hover::before {
   display: inline-block;
   margin: 0;
   margin-right: 11px;
-  padding-top: 18px;
-  padding-bottom: 17px;
+  padding-top: 17px;
+  padding-bottom: 16px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
