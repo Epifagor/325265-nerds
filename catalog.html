@@ -60,8 +60,8 @@
             </label>
            </div>
          </div>
+          <legend class="form-header">Сетка:</legend>
           <ul class="radio">
-            <p class="form-header">Сетка:</p>
             <li class="radio-input">
               <input type="radio" name="layout" value="адаптивная" id="adoptive" checked>
               <label class="radio-label" for="adoptive">Адаптивная</label>
@@ -75,8 +75,8 @@
               <label for="flex">Резиновая</label>
             </li>
           </ul>
+          <legend class="form-header">Особенности:</legend>
           <ul class="checkbox">
-            <p class="form-header">Особенности:</p>
             <li class="checkbox-input">
               <input type="checkbox" name="slider" id="slider" checked>
               <label for="slider">Слайдер</label>
@@ -99,15 +99,15 @@
             </li>
           </ul>
           <div class="form-btn">
-              <a href="#">Показать</a>
-            </div>
+            <a href="#">Показать</a>
+          </div>
         </form>
         <section class="catalog">
           <div class="classify clearfix">
             <p>Сортировать:</p>
             <div class="sort">
               <a class="sort-down active" href="#">Вниз</a>
-              <a class="sort-up"href="#">Вверх</a>
+              <a class="sort-up" href="#">Вверх</a>
             </div>
             <div class="filter">
               <a class="active-filter" href="#">по цене</a>
@@ -174,19 +174,20 @@
         </section>
       </div>
     </main>
-        <footer class="main-footer">
+    <footer class="main-footer">
       <div class="footer-top">
+        <div id="yandex-map"></div>
         <div class="container">
-        <section class="footer-contacts">
-          <p class="company-name">Nёrds design studio</p>
-          <p class="contact adress">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contact phone-number">тел. +7 (812) 275-75-75</p>
+          <section class="footer-contacts">
+            <p class="company-name">Nёrds design studio</p>
+            <p class="contact adress">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contact phone-number">тел. +7 (812) 275-75-75</p>
             <a class="contact feedback-btn" href="#">Напишите нам</a>
-        </section>
-          </div>
+          </section>
         </div>
-        <section class="footer-social clearfix">
-          <div class="container">
+      </div>
+      <section class="footer-social clearfix">
+        <div class="container">
           <div class="footer-btn">
             <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
             <a class="social-btn social-btn-fb" href="#">Facebook</a>
@@ -196,8 +197,8 @@
             <p class="social-benefit">Давайте дружить, это выгодно!</p>
             <p class="social-discount">Скидка 10% для друзей из социальных сетей.</p>
           </div>
-            </div>
-        </section>
+        </div>
+      </section>
     </footer>
     <div class="modal-content">
       <p class="write-us">Напишите нам</p>
@@ -218,5 +219,9 @@
         <input class="btn" type="submit" value="Отправить">
       </form>
     </div>
+
+    <script src="scripts.js"></script>
+
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=2VXg3MDUZmAIR7P2IW-CBEBTkTLogEHb&amp;width=100%25&amp;height=414&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=yandex-map"></script>
   </body>
 </html>
