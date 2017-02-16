@@ -44,10 +44,12 @@ h2 {
   margin: 0;
   margin-bottom: 16px;
 }
+
 h3 {
   margin: 0;
   margin-bottom: 15px;
 }
+
 h3 a {
   display: block;
   font-size: 18px;
@@ -175,8 +177,7 @@ h3 a {
 }
 
 .basket:active {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .basket::before {
@@ -217,7 +218,6 @@ h3 a {
   height:18px;
   z-index:1000;
   font-size: 0;
-
 }
 
 .slider-controls label {
@@ -232,8 +232,6 @@ h3 a {
   border-radius: 50%;
   cursor: pointer;
   font-size: 16px;
-
-
 }
 
 .slider-controls label:last-child {
@@ -553,14 +551,11 @@ h3 a {
   font-size: 16px;
   position: relative;
   vertical-align: middle;
-
 }
 
 .project-logo img {
   opacity: 0.2;
   vertical-align:bottom
-
-
 }
 
 .academy::before,
@@ -602,7 +597,6 @@ h3 a {
   position: relative;
   height: 414px;
   margin-bottom: 69px;
-
 }
 
 .footer-contacts {
@@ -614,7 +608,6 @@ h3 a {
   background-color: #ffffff;
   position: absolute;
   top: 55px;
-
 }
 
 .company-name {
@@ -622,7 +615,7 @@ h3 a {
   line-height: 30px;
   font-weight: 700;
   margin:0;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   text-transform: uppercase;
 }
 
@@ -777,7 +770,6 @@ h3 a {
   }
 }
 
-
 .modal-content {
   position: absolute;
   left: 240px;
@@ -835,7 +827,6 @@ h3 a {
   position: absolute;
   top: 6px;
   right: 0px;
-
   width: 21px;
   height: 3px;
   background-color: #fb565a;
@@ -874,7 +865,6 @@ h3 a {
 }
 
 .feedback-form label {
-
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -1334,8 +1324,8 @@ input[type="checkbox"] + label:hover::before {
 
 .sort {
   float:right;
-
 }
+
 .sort .active {
   opacity: 1;
 }
@@ -1361,7 +1351,6 @@ input[type="checkbox"] + label:hover::before {
   width: 9px;
   height: 9px;
   background-position: -10px -10px;
-
 }
 
 .sort-up {
