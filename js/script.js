@@ -59,9 +59,9 @@ function init () {
 myMap = new ymaps.Map('map', {
   center: [59.939167313501486,30.321536952296356],
   zoom: 17,
-  controls: ['smallMapDefaultSet']
+  controls: ["smallMapDefaultSet"]
   }, {
-  searchControlProvider: 'yandex#search' });
+  searchControlProvider: "yandex#search" });
 
 myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
   hintContent: "Nerds"
