@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 #map {
@@ -339,25 +339,29 @@ h3 a {
   box-shadow: inset 0 3px 0 0 #c13135;
 }
 
-.slide:nth-child(1){
+.slide:nth-child(1) {
   background-image: url("../img/slide-bg-1.png");
   background-repeat: no-repeat;
   background-position: 430px 15px;
 }
 
-.slide:nth-child(2){
+.slide:nth-child(2) {
   background-image: url("../img/slide-bg-2.png");
   background-repeat: no-repeat;
   background-position: 500px 10px;
 }
 
-.slide:nth-child(3){
+.slide:nth-child(3) {
   background-image: url("../img/slide-bg-3.png");
   background-repeat: no-repeat;
   background-position: 100% 19px;
 }
 
-.slide{
+.slide:nth-child(2) p {
+  width: 420px;
+}
+
+.slide {
   display: none;
 }
 
@@ -395,11 +399,15 @@ h3 a {
   padding: 0;
 }
 
+.features-text {
+  width: 250px;
+}
+
 .features-item:last-child {
   margin-right: 0;
 }
 
-.features-item::before{
+.features-item::before {
   content: "";
   display: block;
 
@@ -440,15 +448,15 @@ h3 a {
   padding-left: 40px;
 }
 
-.web .features-btn{
+.web .features-btn {
   background-color: #fb565a;
 }
 
-.web .features-btn:hover{
+.web .features-btn:hover {
   background-color: #e74246;
 }
 
-.web .features-btn:active{
+.web .features-btn:active {
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 0 #c13135;
 }
@@ -827,13 +835,13 @@ h3 a {
 }
 
 @keyframes move {
-  0%   {
+  0% {
     transform: translateX(400px);
   }
-  70%  {
+  70% {
     transform: translateX(-20px);
   }
-  90%  {
+  90% {
     transform: translateX(10px);
   }
   100% {
@@ -972,7 +980,7 @@ h3 a {
   width: 356px;
 }
 
-.user-data:first-child{
+.user-data:first-child {
   margin-right: 40px;
 }
 
@@ -1002,7 +1010,7 @@ h3 a {
   color: #e74246;
 }
 
-.letter-content input{
+.letter-content input {
   width: 728px;
 }
 
@@ -1127,7 +1135,7 @@ h3 a {
   padding: 0;
   margin-bottom: 47px;
 
-  color:  #283136;
+  color: #283136;
 }
 
 .checkbox {
@@ -1406,12 +1414,12 @@ input[type="checkbox"] + label:hover::before {
   box-shadow: inset 0 3px 0 0 #c13135;
 }
 
-.classify{
+.classify {
   margin: 0;
   margin-bottom: 53px;
 }
 
-.classify p{
+.classify p {
   float:left;
   margin: 0;
 
@@ -1483,7 +1491,7 @@ input[type="checkbox"] + label:hover::before {
   width: 9px;
   height: 9px;
 
-  background-image: url(../img/spritesheet%20sort.png);
+  background-image: url(../img/sort.png);
   background-repeat: no-repeat;
   background-position: -10px -10px;
 }
@@ -1509,7 +1517,7 @@ input[type="checkbox"] + label:hover::before {
   width: 9px;
   height: 9px;
 
-  background-image: url(../img/spritesheet%20sort.png);
+  background-image: url(../img/sort.png);
   background-repeat: no-repeat;
   background-position: -10px -10px;
   opacity: 0.2;
